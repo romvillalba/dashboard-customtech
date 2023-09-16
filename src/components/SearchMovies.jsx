@@ -18,7 +18,7 @@ export default function SearchMovies(){
 	const keyword = 'PELÍCULA DEMO';
 
 	// Credenciales de API
-	const apiKey = 'X'; // Intenta poner cualquier cosa antes para probar
+	const apiKey = 'ce85b155'; // Intenta poner cualquier cosa antes para probar
 
 	return(
 		<div className="container-fluid">

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ContentRowMovies, LastMovieInDb, GenresInDb} from './index'
 
-export default function ContentRowTop({categories}) {
-      console.log(categories)
+export default function ContentRowTop({categorys}) {
+      console.log(categorys)
   return (
     <div className="container-fluid">
           <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -12,7 +12,7 @@ export default function ContentRowTop({categories}) {
                 
           <div className="row">
                 <LastMovieInDb />
-                <GenresInDb categories = {categories}/>
+                <GenresInDb categorys = {categorys}/>
           </div>
     </div>
 

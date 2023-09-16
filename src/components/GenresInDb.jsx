@@ -2,7 +2,7 @@ import React from 'react';
 import { Genre } from './index'
 
 
-export default function GenresInDb({categories})  {
+export default function GenresInDb({categorys})  {
 
     return (
         <div className="col-lg-6 mb-4">						
@@ -12,7 +12,7 @@ export default function GenresInDb({categories})  {
                   </div>
                   <div className="card-body fondoCaja">
                     <div className="row ">
-                      { categories.map( (category, i) => (
+                      { categorys.map( (category, i) => (
                           <Genre key = {category + i} name = {category} />
                       ))}
                     </div>
