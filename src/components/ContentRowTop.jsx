@@ -2,7 +2,6 @@ import React from 'react';
 import { ContentRowMovies, LastMovieInDb, GenresInDb } from './index'
 
 export default function ContentRowTop({ categorys, lastProduct, userCount, productCount }) {
-      console.log(categorys)
       return (
             <div className="container-fluid">
                   <div className="d-sm-flex align-items-center justify-content-between mb-4">

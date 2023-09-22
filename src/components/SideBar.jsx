@@ -84,7 +84,7 @@ export default function SideBar(props) {
                                                             userInfo = {userInfo}/>} />
 
             <Route path ='/genres' exact  element={<GenresInDb 
-                                                            categories = {Object.keys(productInfo.countByCategory)}/>} />
+                                                            categories = {productInfo.countByCategory}/>} />
                                                             
             <Route path ='/lastMovie' exact   element={<LastMovieInDb 
                                                             product = {productInfo.products[productInfo.products.length - 1]}/>} />
