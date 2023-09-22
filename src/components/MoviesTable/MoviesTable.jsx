@@ -10,7 +10,6 @@ export default function MoviesTable({data, header}) {
 
               <MoviesTableRows data = {data} header = {header}/>
     
-              <MoviesTableGridHeaderFooter  header = {header}/>
             </div>
           </div>
 
