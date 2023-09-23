@@ -3,7 +3,6 @@ import { Genre } from './index'
 
 
 export default function GenresInDb({categorys})  {
-
     return (
         <div className="col-lg-6 mb-4">						
             <div className="card shadow mb-4">

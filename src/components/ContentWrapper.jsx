@@ -2,13 +2,13 @@ import React from 'react';
 import { TopBar, ContentRowTop, Footer, MoviesTable } from './index'
 
 export default function ContentWrapper({userInfo, productInfo}) {
-  console.log("ContentWrapper", productInfo)
   return (
     <div id="content-wrapper" className="d-flex flex-column">
         <div id='content'>
               <TopBar />
               <ContentRowTop categorys = {productInfo.countByCategory} 
                             lastProduct={productInfo.products[productInfo.products.length - 1]}
+                            lastUser = {userInfo.users[userInfo.users.length - 1]}
                             userCount = {userInfo.count}
                             productCount = {productInfo.count} />
               

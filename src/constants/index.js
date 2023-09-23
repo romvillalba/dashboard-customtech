@@ -2,28 +2,38 @@
 
 export const sideBar = [
   {
-    id: "genres",
-    title: "Genres",
-    route: "/genres"
+    id: "categories",
+    title: "Categories",
+    route: "/categories"
   },
   {
-    id: "lastMovie",
-    title: "Last Movie",
-    route: "/lastMovie"
+    id: "lastProduct",
+    title: "Last Product",
+    route: "/lastProduct"
   },
   {
-    id: "dataMovies",
+    id: "lastUser",
+    title: "Last User",
+    route: "/lastUser"
+  },
+  {
+    id: "stats",
     title: "Stats",
     route: "/stats" 
   },
   {
-    id: "dataMovies",
-    title: "Table",
-    route: "/table"
+    id: "tableUser",
+    title: "Table Users",
+    route: "/tableUser"
   },
   {
-    id: "searchMovies",
-    title: "Search",
-    route: "/searchmovies"
+    id: "tableProduct",
+    title: "Table Products",
+    route: "/tableProduct"
   },
+  // {
+  //   id: "searchMovies",
+  //   title: "Search",
+  //   route: "/searchmovies"
+  // },
 ]

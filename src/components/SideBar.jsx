@@ -56,7 +56,7 @@ export default function SideBar(props) {
                   <li className="nav-item active">
                         <Link className="nav-link" to="/">
                               <i className="fas fa-fw fa-tachometer-alt"></i>
-                                    <span>Dashboard - DH movies</span>
+                                    <span>Dashboard - CustomTech</span>
                         </Link>
                   </li>
             <hr className="sidebar-divider" />
@@ -83,11 +83,14 @@ export default function SideBar(props) {
                                                             productInfo = {productInfo} 
                                                             userInfo = {userInfo}/>} />
 
-            <Route path ='/genres' exact  element={<GenresInDb 
-                                                            categories = {productInfo.countByCategory}/>} />
+            <Route path ='/categories' exact  element={<GenresInDb 
+                                                            categorys = {productInfo.countByCategory}/>} />
                                                             
-            <Route path ='/lastMovie' exact   element={<LastMovieInDb 
-                                                            product = {productInfo.products[productInfo.products.length - 1]}/>} />
+            <Route path ='/lastProduct' exact   element={<LastMovieInDb 
+                                                            object = {productInfo.products[productInfo.products.length - 1]}/>} />
+
+            <Route path ='/lastUser' exact   element={<LastMovieInDb 
+                                                            object = {userInfo.users[userInfo.users.length - 1]}/>} />
 
             <Route path ='/stats' exact   element={<ContentRowMovies
                                                             userCount = {userInfo.count}

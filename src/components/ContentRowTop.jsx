@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContentRowMovies, LastMovieInDb, GenresInDb } from './index'
 
-export default function ContentRowTop({ categorys, lastProduct, userCount, productCount }) {
+export default function ContentRowTop({ categorys, lastProduct, lastUser, userCount, productCount }) {
       return (
             <div className="container-fluid">
                   <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -11,9 +11,11 @@ export default function ContentRowTop({ categorys, lastProduct, userCount, produ
                                     productCount = {productCount} />
 
                   <div className="row">
-                        <LastMovieInDb product={lastProduct} />
+                        <LastMovieInDb object={lastProduct} />
+                        <LastMovieInDb object={lastUser} />
                         <GenresInDb categorys={categorys} />
                   </div>
+                  
             </div>
 
       );
