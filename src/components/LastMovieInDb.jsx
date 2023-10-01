@@ -2,7 +2,6 @@ import React from 'react';
 // import image from '../assets/images/1693275298039.jpg';
 
 export default function LastMovieInDb({object}) {
-      console.log(object)
       return (
             <div className="col-lg-6 mb-4">
                   <div className="card shadow mb-4">

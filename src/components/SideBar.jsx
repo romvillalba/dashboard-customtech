@@ -42,7 +42,8 @@ export default function SideBar(props) {
             data()
 
       }, [])
-
+      const lastProd = productInfo.products.filter( p => !p.erased);
+      const lastUser = userInfo.users.filter( p => !p.erased);
 
   return (
     <>  
@@ -77,7 +78,6 @@ export default function SideBar(props) {
       </ul>
 
 
-
       
       <Routes>
             <Route path ='/'  exact element={<ContentWrapper 
@@ -88,10 +88,10 @@ export default function SideBar(props) {
                                                             categorys = {productInfo.countByCategory}/>} />
                                                             
             <Route path ='/lastProduct' exact   element={<LastMovieInDb 
-                                                            object = {productInfo.products[productInfo.products.length - 1]}/>} />
+                                                            object = {lastProd[lastProd.length - 1]}/>} />
 
             <Route path ='/lastUser' exact   element={<LastMovieInDb 
-                                                            object = {userInfo.users[userInfo.users.length - 1]}/>} />
+                                                            object = {lastUser[lastUser.length - 1]}/>} />
 
             <Route path ='/stats' exact   element={<ContentRowMovies
                                                             userCount = {userInfo.count}

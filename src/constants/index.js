@@ -16,11 +16,11 @@ export const sideBar = [
     title: "Last User",
     route: "/lastUser"
   },
-  {
-    id: "stats",
-    title: "Stats",
-    route: "/stats" 
-  },
+  // {
+  //   id: "stats",
+  //   title: "Stats",
+  //   route: "/stats" 
+  // },
   {
     id: "tableUser",
     title: "Table Users",

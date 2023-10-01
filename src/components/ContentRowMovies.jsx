@@ -61,8 +61,7 @@ import { Cards } from './index'
 // export default ContentRowMovies
 
 
-export default function ContentRowMovies({ userCount, productCount }) {
-  console.log("u ",userCount,"p ",productCount )
+export default function ContentRowMovies({ userCount, productCount, categoryCount}) {
   return (
     <div className='row'>
       <Cards
@@ -75,11 +74,11 @@ export default function ContentRowMovies({ userCount, productCount }) {
         quantity={productCount}
         color="success"
         icon="fa-award" />
-      {/* <Cards
-        title="Actors quantity"
-        quantity={this.state.actorsQuantity}
+      <Cards
+        title="Categories in Data Base"
+        quantity={categoryCount}
         color="warning"
-        icon="fa-user" /> */}
+        icon="fa-user" />
     </div>
 
   );
