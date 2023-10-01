@@ -14,6 +14,7 @@ export default function LastMovieInDb({object}) {
                                     <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "40rem" }} src={object ? object.image ? "/images/"+object.image : "" : ""} alt=" productImg " />
                               </div>
                               <p>{ object ? object.description ? object.description : object.name : ''}</p>
+                              <h4>{ object ? object.name : ''}</h4>
                               <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View {object ? object.detail ? object.detail.includes("user") ? "user" : "product": "" : "" } detail</a>
                         </div>
                   </div>
