@@ -1,5 +1,6 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png'
+// import image from '../assets/images/logo-DH.png'
+import customTech from '../assets/images/logoTextoBlancoConBorde.png'
 import PropTypes from 'prop-types'
 import { ContentWrapper, GenresInDb, LastMovieInDb, ContentRowMovies, MoviesTable , SearchMovies, NotFound } from './index'
 import { Link, Route, Routes } from 'react-router-dom'
@@ -48,7 +49,7 @@ export default function SideBar(props) {
       <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
                         <Link exact className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                               <div className="sidebar-brand-icon">
-                                    <img className="w-100" src={image} alt="Digital House" />
+                                    <img className="w-100" src={customTech} alt="Digital House" />
                               </div>
                         </Link>
 
